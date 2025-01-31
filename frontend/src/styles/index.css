@@ -1,0 +1,51 @@
+:root {
+    --primary-color: #0d6efd;
+    --success-color: #198754;
+    --danger-color: #dc3545;
+    --bg-color: #ffffff;
+    --text-color: #212529;
+    --card-bg: #ffffff;
+  }
+  
+  body.dark-theme {
+    --bg-color: #1a1a1a;
+    --text-color: #ffffff;
+    --card-bg: #2d2d2d;
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .card {
+    background-color: var(--card-bg);
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    transition: background-color 0.3s;
+  }
+  
+  .dark-theme .card {
+    border-color: rgba(255, 255, 255, 0.125);
+  }
+  
+  .progress-bar {
+    transition: width 0.3s ease;
+  }
+  
+  /* Custom slider styling */
+  .form-range::-webkit-slider-thumb {
+    background: var(--primary-color);
+  }
+  
+  .form-range::-moz-range-thumb {
+    background: var(--primary-color);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .container {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
