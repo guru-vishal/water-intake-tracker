@@ -1,4 +1,3 @@
-// client/src/App.jsx
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/NavBar';
 import Home from './pages/Home';

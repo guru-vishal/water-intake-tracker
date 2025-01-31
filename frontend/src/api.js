@@ -1,8 +1,8 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://water-intake-tracker.onrender.com/api';
 
-// Existing auth functions
+
 export const register = async (userData) => {
   const response = await axios.post(API_URL + '/users/register', userData);
   if (response.data) {
@@ -33,7 +33,7 @@ export const getProfile = async (token) => {
   return response.data;
 };
 
-// New water tracking functions
+
 export const getWaterData = async () => {
   const user = JSON.parse(localStorage.getItem('user'));
   const config = {
