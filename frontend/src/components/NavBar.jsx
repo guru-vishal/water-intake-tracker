@@ -14,7 +14,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
         <Link className="navbar-brand" to="/">
-          MERN Auth
+          Water Intake Tracker
         </Link>
         <div className="collapse navbar-collapse">
           <ul className="navbar-nav ms-auto">
